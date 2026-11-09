@@ -1,0 +1,13 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"landingPage": "/wp-admin/",
+	"steps": [
+		{ "step": "activateTheme", "themeFolderName": "shipnote" },
+		{
+			"step": "installPlugin",
+			"pluginData": { "resource": "wordpress.org/plugins", "slug": "create-block-theme" },
+			"options": { "activate": true }
+		}
+	]
+}

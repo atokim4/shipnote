@@ -1,0 +1,640 @@
+/**
+ * Shipnote theme styles.
+ *
+ * Only what theme.json cannot express: browser surfaces, focus, the block
+ * style variations registered in functions.php and a few pattern details.
+ * Logical properties keep everything RTL-safe.
+ */
+
+/* Browser surfaces ------------------------------------------------------- */
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	scrollbar-color: var(--wp--preset--color--contrast-2) var(--wp--preset--color--base-2);
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	caret-color: var(--wp--preset--color--accent);
+}
+
+::selection {
+	background-color: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--on-accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.wp-block-site-title,
+.wp-block-post-title {
+	font-stretch: 86%;
+	text-wrap: balance;
+}
+
+p,
+li,
+dd {
+	text-wrap: pretty;
+}
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+}
+
+a:hover {
+	text-decoration-thickness: 2px;
+}
+
+code,
+kbd,
+samp,
+pre,
+time,
+table,
+.wp-block-post-date {
+	font-variant-numeric: tabular-nums;
+}
+
+:where(p, li) > code {
+	padding: 0.1em 0.35em;
+	border-radius: var(--wp--custom--radius);
+	background-color: var(--wp--preset--color--base-2);
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: 0.875em;
+}
+
+/* Focus: a carbon-blue ring with an offset, visible on paper and on ink. */
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible,
+.wp-block-button__link:focus-visible,
+.wp-element-button:focus-visible {
+	outline: 3px solid var(--wp--preset--color--accent-2);
+	outline-offset: 3px;
+	border-radius: 1px;
+}
+
+.has-contrast-background-color :where(a, button, summary, .wp-element-button):focus-visible,
+.has-accent-2-background-color :where(a, button, summary, .wp-element-button):focus-visible {
+	outline-color: var(--wp--preset--color--accent);
+}
+
+.skip-link.screen-reader-text:focus {
+	background-color: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-family: var(--wp--preset--font-family--display);
+	font-weight: 700;
+}
+
+/* Forms ------------------------------------------------------------------- */
+
+input:not([type="checkbox"], [type="radio"], [type="submit"], [type="button"]),
+select,
+textarea {
+	border: 1px solid var(--wp--preset--color--contrast-2);
+	border-radius: var(--wp--custom--radius);
+	background-color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	font-family: inherit;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: var(--wp--preset--color--contrast-2);
+	opacity: 1;
+}
+
+.wp-block-search__input {
+	padding: 0.6em 0.8em;
+}
+
+/* Header ------------------------------------------------------------------ */
+
+.shipnote-header {
+	border-block-end: var(--wp--custom--rule-width) solid var(--wp--preset--color--contrast);
+}
+
+/* Block style: perforated separator (a tear-off line). -------------------- */
+
+.wp-block-separator.is-style-shipnote-perforated {
+	height: 2px;
+	border: 0;
+	background-color: transparent;
+	background-image: repeating-linear-gradient(
+		to right,
+		currentColor 0,
+		currentColor 0.5rem,
+		transparent 0.5rem,
+		transparent 0.875rem
+	);
+	opacity: 1;
+}
+
+.wp-block-separator.is-style-shipnote-perforated:not(.is-style-wide, .is-style-dots) {
+	width: auto;
+	max-width: none;
+}
+
+/* Block style: ticket group (a ruled paper card). ------------------------- */
+
+.wp-block-group.is-style-shipnote-ticket {
+	border: var(--wp--custom--rule-width) solid var(--wp--preset--color--contrast);
+	border-radius: var(--wp--custom--radius);
+}
+
+.wp-block-group.is-style-shipnote-ticket:not(.has-background) {
+	background-color: var(--wp--preset--color--base);
+}
+
+/* Block style: tag paragraph (version and status labels). ----------------- */
+
+p.is-style-shipnote-tag {
+	display: inline-block;
+	align-self: flex-start;
+	margin-block: 0;
+	padding: 0.2em 0.6em 0.15em;
+	border: 1.5px solid currentColor;
+	border-radius: var(--wp--custom--radius);
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 600;
+	line-height: 1.4;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+/* Block style: checklist. -------------------------------------------------- */
+
+ul.is-style-shipnote-checklist {
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+ul.is-style-shipnote-checklist li {
+	position: relative;
+	padding-inline-start: 1.75em;
+}
+
+ul.is-style-shipnote-checklist li + li {
+	margin-block-start: 0.5em;
+}
+
+ul.is-style-shipnote-checklist li::before {
+	content: "";
+	position: absolute;
+	inset-block-start: 0.38em;
+	inset-inline-start: 0;
+	width: 1.05em;
+	height: 1.05em;
+	background-color: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M3.5 10.5l4 4 9-9' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='square'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M3.5 10.5l4 4 9-9' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='square'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+[dir="rtl"] ul.is-style-shipnote-checklist li::before {
+	transform: scaleX(-1);
+}
+
+/* Release note lists: short ink dash instead of the browser bullet ------- */
+
+ul.shipnote-notes {
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+ul.shipnote-notes li {
+	position: relative;
+	padding-inline-start: 1.5em;
+}
+
+ul.shipnote-notes li + li {
+	margin-block-start: 0.35em;
+}
+
+ul.shipnote-notes li::before {
+	content: "";
+	position: absolute;
+	inset-block-start: 0.8em;
+	inset-inline-start: 0.1em;
+	width: 0.7em;
+	border-block-start: 2px solid currentColor;
+}
+
+/* A section label after a list starts a new group: give it room. */
+.shipnote-notes + .is-style-shipnote-tag {
+	margin-block-start: var(--wp--preset--spacing--40);
+}
+
+/* Headings inside running text get more space above than below. */
+.wp-block-post-content > :is(h2, h3):not(:first-child) {
+	margin-block-start: var(--wp--preset--spacing--50);
+}
+
+/* Details (FAQ) ----------------------------------------------------------- */
+
+.wp-block-details summary {
+	display: flex;
+	gap: 1rem;
+	align-items: baseline;
+	justify-content: space-between;
+	font-family: var(--wp--preset--font-family--display);
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 700;
+	font-stretch: 90%;
+	list-style: none;
+	cursor: pointer;
+}
+
+.wp-block-details summary::-webkit-details-marker {
+	display: none;
+}
+
+.wp-block-details summary::after {
+	content: "+";
+	flex: none;
+	font-family: var(--wp--preset--font-family--mono);
+	font-weight: 400;
+	transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wp-block-details[open] summary::after {
+	transform: rotate(45deg);
+}
+
+.wp-block-details[open] > summary {
+	margin-block-end: 0.75rem;
+}
+
+/* Pattern details ---------------------------------------------------------- */
+
+/* Screenshot frame: the image sits under a mono address strip. */
+.shipnote-frame {
+	overflow: hidden;
+}
+
+.shipnote-frame .wp-block-image,
+.shipnote-frame .wp-block-image img {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+/* The bundled screen is 16:10; reserve its space before it loads. */
+.shipnote-frame .wp-block-image img[src$="/app-screen.svg"] {
+	aspect-ratio: 16 / 10;
+	height: auto;
+}
+
+.shipnote-frame__bar {
+	border-block-end: var(--wp--custom--rule-width) solid var(--wp--preset--color--contrast);
+}
+
+/* Feature items and pricing tickets get a heavy top rule. */
+.shipnote-ruled {
+	border-block-start: var(--wp--custom--rule-width) solid currentColor;
+}
+
+/* Prices are figures: keep them on one line with tabular numbers. */
+.shipnote-price {
+	font-variant-numeric: tabular-nums lining-nums;
+	white-space: nowrap;
+}
+
+/* Motion -------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	.wp-element-button,
+	.wp-block-button__link {
+		transition: background-color 140ms ease-out, color 140ms ease-out;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Print: release notes should print cleanly. */
+@media print {
+	.shipnote-header,
+	.shipnote-footer,
+	.wp-block-navigation {
+		display: none;
+	}
+}
+
+/* Post rows: the list closes with the same heavy rule it opens with. */
+.shipnote-rows {
+	border-block-end: var(--wp--custom--rule-width) solid var(--wp--preset--color--contrast);
+}
+
+.wp-block-query-pagination {
+	margin-block-start: var(--wp--preset--spacing--40);
+}
+
+/* Hero: the screenshot sits on the seam between paper and the shaded band below. */
+.shipnote-hero {
+	background-image: linear-gradient(
+		to bottom,
+		transparent 0,
+		transparent calc(100% - 9rem),
+		var(--wp--preset--color--base-2) calc(100% - 9rem)
+	);
+	padding-block-end: var(--wp--preset--spacing--60) !important;
+}
+
+.shipnote-hero__title {
+	max-width: 17ch;
+	font-stretch: 80%;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	word-spacing: 0.04em;
+	line-height: 0.98;
+}
+
+/* Inverted surfaces: text, headings, links and rules follow the surface colour. */
+.has-contrast-background-color :where(h1, h2, h3, h4, h5, h6),
+.has-contrast-background-color .wp-block-separator,
+.has-accent-background-color :where(h1, h2, h3, h4, h5, h6) {
+	color: inherit;
+}
+
+.has-contrast-background-color a:where(:not(.wp-element-button)) {
+	color: inherit;
+}
+
+.has-contrast-background-color .wp-element-button:hover,
+.has-contrast-background-color .wp-element-button:focus {
+	background-color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+}
+
+/* Grid children stretch so buttons in pricing tickets line up. */
+.wp-block-group.is-layout-grid > .is-style-shipnote-ticket {
+	height: 100%;
+}
+
+.has-accent-background-color .wp-element-button:hover,
+.has-accent-background-color .wp-element-button:focus {
+	background-color: var(--wp--preset--color--base) !important;
+	color: var(--wp--preset--color--contrast) !important;
+}
+
+.has-accent-background-color :where(a, button, .wp-element-button):focus-visible {
+	outline-color: var(--wp--preset--color--on-accent);
+}
+
+/* Header, main and footer meet edge to edge; sections set their own padding. */
+.wp-site-blocks > * + * {
+	margin-block-start: 0;
+}
+
+/* Dates in post rows are links, but read as metadata until hovered. */
+.wp-block-post-date a {
+	text-decoration: none;
+}
+
+.wp-block-post-date a:hover {
+	text-decoration: underline;
+}
+
+/* Long code lines scroll inside their box; long words and URLs wrap. */
+pre {
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+.wp-block-post-content,
+.wp-block-comment-content,
+.wp-block-post-title {
+	overflow-wrap: break-word;
+}
+
+.wp-block-post-content :where(img, video, iframe, embed, object) {
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-block-post-content table {
+	display: block;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+/* Classic content (posts written before the block editor). */
+.wp-block-post-content blockquote:not([class]) {
+	margin-inline: 0;
+	padding-block-start: var(--wp--preset--spacing--30);
+	border-block-start: var(--wp--custom--rule-width) solid var(--wp--preset--color--contrast);
+}
+
+.wp-block-post-content table:not([class]) {
+	border-collapse: collapse;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.wp-block-post-content :where(table:not([class])) :where(th, td) {
+	padding: 0.5em 0.75em;
+	border-block-end: 1px solid var(--wp--preset--color--rule);
+	text-align: start;
+	vertical-align: top;
+}
+
+.wp-block-post-content :where(table:not([class])) th {
+	border-block-end-color: var(--wp--preset--color--contrast);
+	font-family: var(--wp--preset--font-family--display);
+}
+
+/* Footer page list: a plain column of links. */
+.shipnote-footer__nav .wp-block-page-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: 560;
+	columns: 2 9rem;
+	column-gap: var(--wp--preset--spacing--50);
+}
+
+.shipnote-footer__nav .wp-block-page-list li {
+	margin-block-end: 0.6rem;
+	break-inside: avoid;
+}
+
+.shipnote-footer__nav a {
+	color: var(--wp--preset--color--contrast);
+	text-decoration: none;
+}
+
+.shipnote-footer__nav a:hover {
+	text-decoration: underline;
+}
+
+.shipnote-footer__nav .wp-block-page-list ul {
+	padding-inline-start: 1em;
+	list-style: none;
+}
+
+/* Logo strip: names between two hairlines, set like a masthead. */
+.shipnote-logo-strip {
+	border-block: 1px solid var(--wp--preset--color--rule);
+}
+
+.shipnote-logo-strip__names > p {
+	margin: 0;
+	font-stretch: 78%;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	color: var(--wp--preset--color--contrast-2);
+}
+
+/* FAQ: the list of questions closes with the same heavy rule. */
+.shipnote-faq {
+	border-block-end: var(--wp--custom--rule-width) solid var(--wp--preset--color--contrast);
+}
+
+/* Testimonials: the quote block drops its default bar inside a ticket. */
+.wp-block-quote.shipnote-quote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.wp-block-quote.shipnote-quote cite {
+	display: block;
+	margin-block-start: var(--wp--preset--spacing--30);
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-style: normal;
+	color: var(--wp--preset--color--contrast-2);
+}
+
+/* Team monograms: a small ink square with initials. */
+p.shipnote-monogram {
+	display: grid;
+	place-items: center;
+	width: 3.5rem;
+	height: 3.5rem;
+	margin-block-end: 0.5rem;
+	padding: 0;
+	border-radius: var(--wp--custom--radius);
+	font-size: var(--wp--preset--font-size--large);
+	font-stretch: 80%;
+	font-weight: 800;
+	line-height: 1;
+}
+
+/* Release notes: section tags sit above short lists, tags read as labels. */
+.shipnote-release .is-style-shipnote-tag + .wp-block-list,
+.shipnote-release__body .is-style-shipnote-tag + ul {
+	margin-block-start: 0.5rem;
+}
+
+.shipnote-release__body > .is-style-shipnote-tag:not(:first-child),
+.shipnote-release .wp-block-list + .is-style-shipnote-tag {
+	margin-block-start: var(--wp--preset--spacing--40);
+}
+
+.shipnote-release__tags a {
+	display: inline-block;
+	padding: 0.15em 0.5em;
+	border: 1.5px solid currentColor;
+	border-radius: var(--wp--custom--radius);
+	color: var(--wp--preset--color--contrast);
+	text-decoration: none;
+	letter-spacing: 0.02em;
+}
+
+.shipnote-release__tags .wp-block-post-terms__separator {
+	display: none;
+}
+
+.shipnote-release__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+}
+
+.shipnote-release .wp-block-post-date a {
+	color: inherit;
+}
+
+/* Docs: the sidebar stays in view on wide screens. */
+@media (min-width: 782px) {
+	.shipnote-docs__aside > * {
+		position: sticky;
+		inset-block-start: var(--wp--preset--spacing--40);
+	}
+
+	.admin-bar .shipnote-docs__aside > * {
+		inset-block-start: calc(var(--wp--preset--spacing--40) + 32px);
+	}
+}
+
+.shipnote-toc,
+.shipnote-docs-nav {
+	border-block-start: var(--wp--custom--rule-width) solid var(--wp--preset--color--contrast);
+}
+
+ul.shipnote-toc__list {
+	margin: 0;
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+ul.shipnote-toc__list li + li {
+	margin-block-start: 0.4em;
+}
+
+.shipnote-docs-nav__menu .wp-block-page-list {
+	margin: 0;
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+.shipnote-docs-nav__menu li + li {
+	margin-block-start: 0.5em;
+}
+
+.shipnote-toc__list a,
+.shipnote-docs-nav__menu a {
+	color: var(--wp--preset--color--contrast);
+	text-decoration: none;
+}
+
+.shipnote-toc__list a:hover,
+.shipnote-docs-nav__menu a:hover {
+	text-decoration: underline;
+}
+
+.shipnote-docs-nav__menu [aria-current="page"] {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+}
+
+/* Anchored headings stop below the top edge when jumped to. */
+:where(h2, h3)[id] {
+	scroll-margin-block-start: var(--wp--preset--spacing--50);
+}
+
+/* Landing pages built from full-width sections: no gap between them. */
+.page-template-page-no-title .wp-block-post-content > .alignfull {
+	margin-block: 0;
+}

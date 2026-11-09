@@ -1,0 +1,1176 @@
+# Copyright (C) 2026 atokim4
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Shipnote 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/shipnote\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-09T08:49:30+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: shipnote\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Shipnote"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/atokim4/shipnote"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Shipnote is a block theme for launch sites of small software products: a landing page, pricing, docs pages and a changelog that reads like a stack of dated release notes. It is set in Archivo and Source Serif 4 on warm paper with a signal-orange accent, and comes with dark and high-contrast style variations. Everything is built with core blocks, so you can edit every page in the Site Editor."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "atokim4"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/atokim4"
+msgstr ""
+
+#: functions.php:60
+msgctxt "Block pattern category"
+msgid "Shipnote: launch page"
+msgstr ""
+
+#: functions.php:61
+msgid "Sections for a product landing page."
+msgstr ""
+
+#: functions.php:67
+msgctxt "Block pattern category"
+msgid "Shipnote: docs"
+msgstr ""
+
+#: functions.php:68
+msgid "Documentation page layouts."
+msgstr ""
+
+#: functions.php:74
+msgctxt "Block pattern category"
+msgid "Shipnote: release notes"
+msgstr ""
+
+#: functions.php:75
+msgid "Changelog entries and release note layouts."
+msgstr ""
+
+#: functions.php:94
+msgid "Perforated"
+msgstr ""
+
+#: functions.php:101
+msgid "Ticket"
+msgstr ""
+
+#: functions.php:108
+msgid "Tag"
+msgstr ""
+
+#: functions.php:115
+msgid "Checklist"
+msgstr ""
+
+#: patterns/changelog-entry.php
+msgctxt "Pattern title"
+msgid "Release notes entry"
+msgstr ""
+
+#: patterns/changelog-entry.php
+msgctxt "Pattern description"
+msgid "One dated release with a version tag and Added, Fixed and Changed lists. Use it as the content of a post in your Changelog category. Sample content."
+msgstr ""
+
+#: patterns/changelog-entry.php:18
+msgctxt "Sample version number"
+msgid "v2.4.0"
+msgstr ""
+
+#: patterns/changelog-entry.php:22
+msgctxt "Sample release date"
+msgid "2026-10-27"
+msgstr ""
+
+#: patterns/changelog-entry.php:28
+msgctxt "Sample release title"
+msgid "Recaps you can edit before sending"
+msgstr ""
+
+#: patterns/changelog-entry.php:32
+msgctxt "Release note section label"
+msgid "Added"
+msgstr ""
+
+#: patterns/changelog-entry.php:37
+msgctxt "Sample release note item"
+msgid "Recaps open as a draft, so you can trim them before they go to the team chat."
+msgstr ""
+
+#: patterns/changelog-entry.php:41
+msgctxt "Sample release note item"
+msgid "Keyboard shortcut R starts a recap from any board."
+msgstr ""
+
+#: patterns/changelog-entry.php:46
+msgctxt "Release note section label"
+msgid "Fixed"
+msgstr ""
+
+#: patterns/changelog-entry.php:51
+msgctxt "Sample release note item"
+msgid "Cards dragged between columns on touch screens no longer snap back."
+msgstr ""
+
+#: patterns/changelog-entry.php:55
+msgctxt "Sample release note item"
+msgid "Due dates now respect the time zone set in your profile."
+msgstr ""
+
+#: patterns/changelog-entry.php:60
+msgctxt "Release note section label"
+msgid "Changed"
+msgstr ""
+
+#: patterns/changelog-entry.php:65
+msgctxt "Sample release note item"
+msgid "Archived boards load the last 12 weeks first; older weeks load as you scroll."
+msgstr ""
+
+#: patterns/contact.php
+msgctxt "Pattern title"
+msgid "Contact"
+msgstr ""
+
+#: patterns/contact.php
+msgctxt "Pattern description"
+msgid "A contact section with an email button and support details on a ticket. It has no form: add the block of a form plugin in the right column if you need one. Sample address on example.com."
+msgstr ""
+
+#: patterns/contact.php:19
+msgctxt "Sample section heading"
+msgid "Write to a person"
+msgstr ""
+
+#: patterns/contact.php:23
+msgctxt "Sample contact text"
+msgid "Questions about plans, a bug, or an idea for the board. Mail goes to the four of us, and someone answers within a working day."
+msgstr ""
+
+#: patterns/contact.php:28
+msgctxt "Sample contact email address"
+msgid "hello@example.com"
+msgstr ""
+
+#: patterns/contact.php:36
+msgctxt "Sample contact detail heading"
+msgid "Support hours"
+msgstr ""
+
+#: patterns/contact.php:40
+msgctxt "Sample support hours"
+msgid "Monday to Friday, 09:00 to 17:00 UTC"
+msgstr ""
+
+#: patterns/contact.php:48
+msgctxt "Sample contact detail heading"
+msgid "Before you write"
+msgstr ""
+
+#: patterns/contact.php:52
+msgctxt "Sample contact detail text"
+msgid "Most setup questions are answered in the docs and the changelog. For a bug, tell us the board name and what you clicked."
+msgstr ""
+
+#: patterns/cta-band.php
+msgctxt "Pattern title"
+msgid "Call to action band"
+msgstr ""
+
+#: patterns/cta-band.php
+msgctxt "Pattern description"
+msgid "A full-width signal-orange band with a large line of copy and one button."
+msgstr ""
+
+#: patterns/cta-band.php:18
+msgctxt "Sample call to action heading"
+msgid "Try it for one week. Keep the recap either way."
+msgstr ""
+
+#: patterns/cta-band.php:23
+msgctxt "Sample call to action button"
+msgid "Start your first week"
+msgstr ""
+
+#: patterns/docs-page.php
+msgctxt "Pattern title"
+msgid "Docs page with sidebar"
+msgstr ""
+
+#: patterns/docs-page.php
+msgctxt "Pattern description"
+msgid "A documentation article with an \"On this page\" list in a sticky sidebar that links to its sections. Sample content."
+msgstr ""
+
+#: patterns/docs-page.php:18
+#: patterns/docs-page.php:19
+#: patterns/docs-page.php:20
+msgctxt "Docs table of contents label"
+msgid "On this page"
+msgstr ""
+
+#: patterns/docs-page.php:25
+msgctxt "Sample docs section link"
+msgid "Install"
+msgstr ""
+
+#: patterns/docs-page.php:29
+msgctxt "Sample docs section link"
+msgid "Invite the team"
+msgstr ""
+
+#: patterns/docs-page.php:33
+msgctxt "Sample docs section link"
+msgid "Write the recap"
+msgstr ""
+
+#: patterns/docs-page.php:41
+msgctxt "Sample docs lead paragraph"
+msgid "Set up a board for your team and close your first week. It takes about ten minutes."
+msgstr ""
+
+#: patterns/docs-page.php:45
+msgctxt "Sample docs section heading"
+msgid "Install"
+msgstr ""
+
+#: patterns/docs-page.php:49
+msgctxt "Sample docs text"
+msgid "Create a board from the dashboard and give it the name of your team. The first week starts on the next Monday, or today if you pick Start now."
+msgstr ""
+
+#: patterns/docs-page.php:53
+msgctxt "Sample command in documentation"
+msgid "weekboard init --team &quot;Product&quot; --start monday"
+msgstr ""
+
+#: patterns/docs-page.php:57
+msgctxt "Sample docs section heading"
+msgid "Invite the team"
+msgstr ""
+
+#: patterns/docs-page.php:61
+msgctxt "Sample docs text"
+msgid "Send invites from Settings, then People. Each person gets one link that works for seven days."
+msgstr ""
+
+#: patterns/docs-page.php:66
+msgctxt "Docs callout label"
+msgid "Note"
+msgstr ""
+
+#: patterns/docs-page.php:70
+msgctxt "Sample docs callout text"
+msgid "The free plan has three seats. Invites past that wait until someone upgrades the board."
+msgstr ""
+
+#: patterns/docs-page.php:75
+msgctxt "Sample docs section heading"
+msgid "Write the recap"
+msgstr ""
+
+#: patterns/docs-page.php:79
+msgctxt "Sample docs text"
+msgid "When the week closes, the board drafts a recap from the cards that moved. Edit it, then copy it to your chat tool."
+msgstr ""
+
+#: patterns/faq.php
+msgctxt "Pattern title"
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq.php
+msgctxt "Pattern description"
+msgid "A heading column beside five questions built with the core Details block. Questions and answers are sample content."
+msgstr ""
+
+#: patterns/faq.php:19
+msgctxt "Sample section heading"
+msgid "Questions"
+msgstr ""
+
+#: patterns/faq.php:23
+msgctxt "Sample FAQ intro"
+msgid "The ones people ask before they sign up. Anything else, write to us."
+msgstr ""
+
+#: patterns/faq.php:29
+msgctxt "Sample FAQ question"
+msgid "Is there a free plan?"
+msgstr ""
+
+#: patterns/faq.php:30
+msgctxt "Sample FAQ answer"
+msgid "Yes. Teams of up to three people can use one board for free, with no time limit and no card on file."
+msgstr ""
+
+#: patterns/faq.php:35
+msgctxt "Sample FAQ question"
+msgid "Can we import from another tool?"
+msgstr ""
+
+#: patterns/faq.php:36
+msgctxt "Sample FAQ answer"
+msgid "You can paste a list or upload a CSV. Each line becomes a card, and columns named owner or due date are picked up."
+msgstr ""
+
+#: patterns/faq.php:41
+msgctxt "Sample FAQ question"
+msgid "What happens to unfinished cards?"
+msgstr ""
+
+#: patterns/faq.php:42
+msgctxt "Sample FAQ answer"
+msgid "They roll over to next week with a short note about why. Nothing is deleted when a week closes."
+msgstr ""
+
+#: patterns/faq.php:47
+msgctxt "Sample FAQ question"
+msgid "Does it work offline?"
+msgstr ""
+
+#: patterns/faq.php:48
+msgctxt "Sample FAQ answer"
+msgid "Edits are stored on the device and sync once the connection is back. Conflicts show both versions so you can pick one."
+msgstr ""
+
+#: patterns/faq.php:53
+msgctxt "Sample FAQ question"
+msgid "How do I cancel?"
+msgstr ""
+
+#: patterns/faq.php:54
+msgctxt "Sample FAQ answer"
+msgid "From the billing page, in one step. The board stays readable for 30 days after that, so you can export it."
+msgstr ""
+
+#: patterns/feature-grid.php
+msgctxt "Pattern title"
+msgid "Feature grid"
+msgstr ""
+
+#: patterns/feature-grid.php
+msgctxt "Pattern description"
+msgid "A section heading beside four ruled feature notes in a two-column grid."
+msgstr ""
+
+#: patterns/feature-grid.php:19
+msgctxt "Sample section heading"
+msgid "Made for teams that ship every week"
+msgstr ""
+
+#: patterns/feature-grid.php:23
+msgctxt "Sample section text"
+msgid "Four small habits the board nudges you into, so Friday ends with something to show."
+msgstr ""
+
+#: patterns/feature-grid.php:31
+msgctxt "Sample feature title"
+msgid "One board per week"
+msgstr ""
+
+#: patterns/feature-grid.php:35
+msgctxt "Sample feature description"
+msgid "Every Monday starts clean. Cards you did not finish roll over with a line about why."
+msgstr ""
+
+#: patterns/feature-grid.php:41
+msgctxt "Sample feature title"
+msgid "One owner per card"
+msgstr ""
+
+#: patterns/feature-grid.php:45
+msgctxt "Sample feature description"
+msgid "Shared cards tend to stall, so each card carries exactly one name."
+msgstr ""
+
+#: patterns/feature-grid.php:51
+msgctxt "Sample feature title"
+msgid "A recap at the end"
+msgstr ""
+
+#: patterns/feature-grid.php:55
+msgctxt "Sample feature description"
+msgid "Close the week and the board turns into a short summary you can paste into the team chat."
+msgstr ""
+
+#: patterns/feature-grid.php:61
+msgctxt "Sample feature title"
+msgid "Offline first"
+msgstr ""
+
+#: patterns/feature-grid.php:65
+msgctxt "Sample feature description"
+msgid "Edits are saved on your device and sync when the connection comes back."
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern description"
+msgid "Site title and tagline, a navigation menu, and a small print line."
+msgstr ""
+
+#: patterns/footer.php:22
+#: patterns/footer.php:23
+msgid "Footer"
+msgstr ""
+
+#. translators: 1: Current year, 2: Site title.
+#: patterns/footer.php:31
+#, php-format
+msgid "© %1$s %2$s"
+msgstr ""
+
+#. translators: %s: WordPress, linked to wordpress.org.
+#: patterns/footer.php:39
+#, php-format
+msgid "Powered by %s"
+msgstr ""
+
+#: patterns/footer.php:40
+msgid "https://wordpress.org"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern title"
+msgid "Hero with product screen"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern description"
+msgid "Large headline, a short pitch with two buttons, and a framed product screenshot."
+msgstr ""
+
+#: patterns/hero.php:18
+msgctxt "Sample hero headline"
+msgid "Plan the week in ten minutes. Spend the rest of it on the work."
+msgstr ""
+
+#: patterns/hero.php:23
+msgctxt "Sample hero text"
+msgid "A shared weekly board for small product teams. Drag in what matters, see who is on it, and close the week with a short written recap."
+msgstr ""
+
+#: patterns/hero.php:29
+msgctxt "Sample button label"
+msgid "Start free"
+msgstr ""
+
+#: patterns/hero.php:33
+msgctxt "Sample button label"
+msgid "See pricing"
+msgstr ""
+
+#: patterns/hero.php:38
+msgctxt "Sample note under the hero buttons"
+msgid "Free for teams of three. No card needed."
+msgstr ""
+
+#: patterns/hero.php:47
+msgctxt "Sample address shown above the product screenshot"
+msgid "app.example.com/board"
+msgstr ""
+
+#: patterns/hero.php:51
+msgctxt "Sample build label shown above the product screenshot"
+msgid "build 2.4.0"
+msgstr ""
+
+#: patterns/hero.php:56
+msgctxt "Alt text of the bundled sample screenshot"
+msgid "Sample product screen: a weekly board with five cards, four assigned and one still in draft."
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "Page not found"
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern description"
+msgid "Content of the 404 template."
+msgstr ""
+
+#: patterns/hidden-404.php:15
+msgctxt "Label above the 404 heading"
+msgid "Error 404"
+msgstr ""
+
+#: patterns/hidden-404.php:19
+msgid "This page was moved, renamed or never shipped."
+msgstr ""
+
+#: patterns/hidden-404.php:23
+msgid "Check the address for typos, or search for what you were looking for."
+msgstr ""
+
+#: patterns/hidden-blog-heading.php
+msgctxt "Pattern title"
+msgid "Blog heading"
+msgstr ""
+
+#: patterns/hidden-blog-heading.php
+msgctxt "Pattern description"
+msgid "Heading and intro line for the posts page."
+msgstr ""
+
+#: patterns/hidden-blog-heading.php:15
+msgctxt "Heading of the posts page"
+msgid "Notes and releases"
+msgstr ""
+
+#: patterns/hidden-blog-heading.php:19
+msgid "Everything we have written down, newest first."
+msgstr ""
+
+#: patterns/hidden-comments.php
+msgctxt "Pattern title"
+msgid "Comments"
+msgstr ""
+
+#: patterns/hidden-comments.php
+msgctxt "Pattern description"
+msgid "Comments list with threading, pagination and the reply form."
+msgstr ""
+
+#: patterns/hidden-comments.php:15
+msgid "Comments"
+msgstr ""
+
+#: patterns/hidden-docs-sidebar.php
+msgctxt "Pattern title"
+msgid "Docs sidebar"
+msgstr ""
+
+#: patterns/hidden-docs-sidebar.php
+msgctxt "Pattern description"
+msgid "Content of the docs sidebar template part: a label and a list of pages. To list only your guides, replace the Page List with a Navigation block and pick a Docs menu, or set a parent page in the Page List settings."
+msgstr ""
+
+#: patterns/hidden-docs-sidebar.php:15
+msgctxt "Docs sidebar label"
+msgid "Documentation"
+msgstr ""
+
+#: patterns/hidden-docs-sidebar.php:18
+#: patterns/hidden-docs-sidebar.php:19
+msgctxt "Docs sidebar navigation label"
+msgid "Documentation"
+msgstr ""
+
+#: patterns/hidden-latest-notes.php
+msgctxt "Pattern title"
+msgid "Latest notes"
+msgstr ""
+
+#: patterns/hidden-latest-notes.php
+msgctxt "Pattern description"
+msgid "The three newest posts as dated rows, used on the front page."
+msgstr ""
+
+#: patterns/hidden-latest-notes.php:15
+msgid "Latest notes"
+msgstr ""
+
+#: patterns/hidden-latest-notes.php:33
+msgid "No posts yet. Your first release note will show up here."
+msgstr ""
+
+#: patterns/hidden-post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr ""
+
+#: patterns/hidden-post-navigation.php
+msgctxt "Pattern description"
+msgid "Previous and next post links."
+msgstr ""
+
+#: patterns/hidden-post-navigation.php:13
+#: patterns/hidden-post-navigation.php:14
+msgid "Posts"
+msgstr ""
+
+#: patterns/hidden-posts-list.php
+msgctxt "Pattern title"
+msgid "Posts list (release-note rows)"
+msgstr ""
+
+#: patterns/hidden-posts-list.php
+msgctxt "Pattern description"
+msgid "Query loop used by the blog, archive and search templates. Each post is a dated row."
+msgstr ""
+
+#: patterns/hidden-posts-list.php:40
+msgid "Nothing here yet. Try a search, or head back to the home page."
+msgstr ""
+
+#: patterns/hidden-posts-list.php:43
+#: patterns/hidden-search.php:13
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-posts-list.php:43
+#: patterns/hidden-search.php:13
+msgid "Search the site"
+msgstr ""
+
+#: patterns/hidden-release-notes.php
+msgctxt "Pattern title"
+msgid "Release notes list"
+msgstr ""
+
+#: patterns/hidden-release-notes.php
+msgctxt "Pattern description"
+msgid "Query loop of the Changelog category shown as dated release notes with their full content. Used by the Changelog page template and the changelog category archive. functions.php points it at the category; see shipnote_changelog_query()."
+msgstr ""
+
+#: patterns/hidden-release-notes.php:40
+msgctxt "Empty changelog message"
+msgid "No release notes yet. Publish a post in the Changelog category and it shows up here."
+msgstr ""
+
+#: patterns/hidden-search.php
+msgctxt "Pattern title"
+msgid "Search form"
+msgstr ""
+
+#: patterns/hidden-search.php
+msgctxt "Pattern description"
+msgid "Search form with translatable labels."
+msgstr ""
+
+#: patterns/logo-strip.php
+msgctxt "Pattern title"
+msgid "Logo strip, text only"
+msgstr ""
+
+#: patterns/logo-strip.php
+msgctxt "Pattern description"
+msgid "A ruled row of team names set in the display face, with a label that marks them as sample names. No images needed."
+msgstr ""
+
+#: patterns/logo-strip.php:18
+msgctxt "Logo strip label"
+msgid "Sample names. List only teams that agreed to it."
+msgstr ""
+
+#: patterns/logo-strip.php:23
+msgctxt "Sample team name"
+msgid "Fieldnote"
+msgstr ""
+
+#: patterns/logo-strip.php:27
+msgctxt "Sample team name"
+msgid "Larkspur"
+msgstr ""
+
+#: patterns/logo-strip.php:31
+msgctxt "Sample team name"
+msgid "Ostra Labs"
+msgstr ""
+
+#: patterns/logo-strip.php:35
+msgctxt "Sample team name"
+msgid "Brightwell"
+msgstr ""
+
+#: patterns/logo-strip.php:39
+msgctxt "Sample team name"
+msgid "Kettle &amp; Co"
+msgstr ""
+
+#: patterns/pricing.php
+msgctxt "Pattern title"
+msgid "Pricing, three plans"
+msgstr ""
+
+#: patterns/pricing.php
+msgctxt "Pattern description"
+msgid "Three plan tickets with a price, a short description, a checklist and a button. The middle plan is inverted. Plans and prices are sample content."
+msgstr ""
+
+#: patterns/pricing.php:18
+msgctxt "Sample section heading"
+msgid "Pricing"
+msgstr ""
+
+#: patterns/pricing.php:22
+msgctxt "Sample pricing intro"
+msgid "Start on the free plan and move up when the team grows. You can switch or cancel at any time."
+msgstr ""
+
+#: patterns/pricing.php:29
+msgctxt "Sample pricing plan name"
+msgid "Starter"
+msgstr ""
+
+#: patterns/pricing.php:34
+msgctxt "Sample price"
+msgid "$0"
+msgstr ""
+
+#: patterns/pricing.php:38
+msgctxt "Sample price unit"
+msgid "free for three people"
+msgstr ""
+
+#: patterns/pricing.php:43
+msgctxt "Sample pricing plan description"
+msgid "For a small team trying the weekly rhythm."
+msgstr ""
+
+#: patterns/pricing.php:52
+msgctxt "Sample pricing feature"
+msgid "One shared board"
+msgstr ""
+
+#: patterns/pricing.php:56
+msgctxt "Sample pricing feature"
+msgid "Weekly recap"
+msgstr ""
+
+#: patterns/pricing.php:60
+msgctxt "Sample pricing feature"
+msgid "Seven days of history"
+msgstr ""
+
+#: patterns/pricing.php:66
+msgctxt "Sample pricing button label"
+msgid "Start free"
+msgstr ""
+
+#: patterns/pricing.php:73
+msgctxt "Sample pricing plan name"
+msgid "Team"
+msgstr ""
+
+#: patterns/pricing.php:78
+msgctxt "Sample price"
+msgid "$8"
+msgstr ""
+
+#: patterns/pricing.php:82
+#: patterns/pricing.php:130
+msgctxt "Sample price unit"
+msgid "per person, per month"
+msgstr ""
+
+#: patterns/pricing.php:87
+msgctxt "Sample pricing plan description"
+msgid "For teams that plan together every Monday."
+msgstr ""
+
+#: patterns/pricing.php:96
+msgctxt "Sample pricing feature"
+msgid "Unlimited boards"
+msgstr ""
+
+#: patterns/pricing.php:100
+msgctxt "Sample pricing feature"
+msgid "Recaps with comments"
+msgstr ""
+
+#: patterns/pricing.php:104
+msgctxt "Sample pricing feature"
+msgid "Full history and search"
+msgstr ""
+
+#: patterns/pricing.php:108
+msgctxt "Sample pricing feature"
+msgid "Calendar sync"
+msgstr ""
+
+#: patterns/pricing.php:114
+msgctxt "Sample pricing button label"
+msgid "Try Team"
+msgstr ""
+
+#: patterns/pricing.php:121
+msgctxt "Sample pricing plan name"
+msgid "Studio"
+msgstr ""
+
+#: patterns/pricing.php:126
+msgctxt "Sample price"
+msgid "$24"
+msgstr ""
+
+#: patterns/pricing.php:135
+msgctxt "Sample pricing plan description"
+msgid "For several teams sharing one workspace."
+msgstr ""
+
+#: patterns/pricing.php:144
+msgctxt "Sample pricing feature"
+msgid "Everything in Team"
+msgstr ""
+
+#: patterns/pricing.php:148
+msgctxt "Sample pricing feature"
+msgid "Shared roadmaps across teams"
+msgstr ""
+
+#: patterns/pricing.php:152
+msgctxt "Sample pricing feature"
+msgid "Single sign-on"
+msgstr ""
+
+#: patterns/pricing.php:156
+msgctxt "Sample pricing feature"
+msgid "Priority email support"
+msgstr ""
+
+#: patterns/pricing.php:162
+msgctxt "Sample pricing button label"
+msgid "Talk to us"
+msgstr ""
+
+#: patterns/team.php
+msgctxt "Pattern title"
+msgid "Team"
+msgstr ""
+
+#: patterns/team.php
+msgctxt "Pattern description"
+msgid "A short intro and four people shown as monograms, names and roles. Names are placeholders; swap the monogram for a photo with an Image block if you like."
+msgstr ""
+
+#: patterns/team.php:18
+msgctxt "Sample section heading"
+msgid "Four people, one board"
+msgstr ""
+
+#: patterns/team.php:22
+msgctxt "Sample team intro"
+msgid "We plan our own weeks with the product we sell, and every one of us answers support mail."
+msgstr ""
+
+#: patterns/team.php:29
+msgctxt "Sample initials for a team member"
+msgid "AK"
+msgstr ""
+
+#: patterns/team.php:33
+#: patterns/team.php:47
+#: patterns/team.php:61
+#: patterns/team.php:75
+msgctxt "Placeholder team member name"
+msgid "Sample name"
+msgstr ""
+
+#: patterns/team.php:37
+msgctxt "Placeholder team member role"
+msgid "Founder, product"
+msgstr ""
+
+#: patterns/team.php:43
+msgctxt "Sample initials for a team member"
+msgid "MR"
+msgstr ""
+
+#: patterns/team.php:51
+msgctxt "Placeholder team member role"
+msgid "Engineering"
+msgstr ""
+
+#: patterns/team.php:57
+msgctxt "Sample initials for a team member"
+msgid "JT"
+msgstr ""
+
+#: patterns/team.php:65
+msgctxt "Placeholder team member role"
+msgid "Design"
+msgstr ""
+
+#: patterns/team.php:71
+msgctxt "Sample initials for a team member"
+msgid "LS"
+msgstr ""
+
+#: patterns/team.php:79
+msgctxt "Placeholder team member role"
+msgid "Support"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern title"
+msgid "Testimonials (sample placeholders)"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern description"
+msgid "Three quote tickets for customer words. Every quote is a placeholder marked Sample quote: replace it with a real quote you have permission to use, or remove the section."
+msgstr ""
+
+#: patterns/testimonials.php:17
+msgctxt "Sample section heading"
+msgid "What teams say after a month"
+msgstr ""
+
+#: patterns/testimonials.php:23
+#: patterns/testimonials.php:35
+#: patterns/testimonials.php:47
+msgctxt "Label that marks a placeholder testimonial"
+msgid "Sample quote"
+msgstr ""
+
+#: patterns/testimonials.php:28
+msgctxt "Placeholder testimonial text"
+msgid "We stopped losing Friday afternoons to status meetings. The recap does that job now."
+msgstr ""
+
+#: patterns/testimonials.php:29
+#: patterns/testimonials.php:41
+#: patterns/testimonials.php:53
+msgctxt "Placeholder testimonial author"
+msgid "Sample name"
+msgstr ""
+
+#: patterns/testimonials.php:29
+msgctxt "Placeholder testimonial author role"
+msgid "Product lead, sample company"
+msgstr ""
+
+#: patterns/testimonials.php:40
+msgctxt "Placeholder testimonial text"
+msgid "The rollover note is the feature I did not know I wanted. It keeps us honest about why things slip."
+msgstr ""
+
+#: patterns/testimonials.php:41
+msgctxt "Placeholder testimonial author role"
+msgid "Engineering manager, sample company"
+msgstr ""
+
+#: patterns/testimonials.php:52
+msgctxt "Placeholder testimonial text"
+msgid "Setup took one call. Everyone had a card by the end of it."
+msgstr ""
+
+#: patterns/testimonials.php:53
+msgctxt "Placeholder testimonial author role"
+msgid "Founder, sample company"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Paper"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Paper shade"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Ink"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Ink soft"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Signal"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Ink on signal"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Carbon"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Color name"
+msgid "Rule"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X-Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2X large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Archivo"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Source Serif 4"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "JetBrains Mono"
+msgstr ""
+
+#: theme.json
+#: styles/high-contrast.json
+#: styles/night.json
+msgctxt "Shadow name"
+msgid "Lift"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Docs sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page without title"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank canvas"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Changelog (release notes list)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Docs page with sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Wide page"
+msgstr ""
+
+#: styles/high-contrast.json
+msgctxt "Style variation name"
+msgid "High contrast"
+msgstr ""
+
+#: styles/night.json
+msgctxt "Style variation name"
+msgid "Night shift"
+msgstr ""

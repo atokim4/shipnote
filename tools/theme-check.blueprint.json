@@ -1,0 +1,13 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"steps": [
+		{ "step": "defineWpConfigConsts", "consts": { "WP_DEBUG": true } },
+		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "theme-check" }, "options": { "activate": true } },
+		{ "step": "activateTheme", "themeFolderName": "shipnote" },
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; require_once WP_PLUGIN_DIR . '/theme-check/checkbase.php'; require_once WP_PLUGIN_DIR . '/theme-check/main.php'; global $themechecks; $theme = wp_get_theme( 'shipnote' ); $pass = run_themechecks_against_theme( $theme, 'shipnote' ); $out = array(); foreach ( $themechecks as $check ) { if ( $check instanceof themecheck ) { foreach ( (array) $check->getError() as $e ) { $out[] = html_entity_decode( wp_strip_all_tags( $e ), ENT_QUOTES ); } } } file_put_contents( '/report/theme-check.json', json_encode( array( 'pass' => (bool) $pass, 'messages' => array_values( array_unique( $out ) ) ), JSON_PRETTY_PRINT ) );"
+		}
+	]
+}

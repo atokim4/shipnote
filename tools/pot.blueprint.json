@@ -1,0 +1,13 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"steps": [
+		{
+			"step": "wp-cli",
+			"command": "wp i18n make-pot /wordpress/wp-content/themes/shipnote /wordpress/wp-content/themes/shipnote/languages/shipnote.pot --slug=shipnote --domain=shipnote --exclude=node_modules,tools,tests,dist"
+		}
+	]
+}

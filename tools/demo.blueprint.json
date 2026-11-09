@@ -1,0 +1,33 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"landingPage": "/",
+	"steps": [
+		{
+			"step": "defineWpConfigConsts",
+			"consts": {
+				"WP_DEBUG": true,
+				"DISABLE_WP_CRON": true
+			}
+		},
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "Weekboard",
+				"blogdescription": "A sample product site built with Shipnote",
+				"permalink_structure": "/%postname%/"
+			}
+		},
+		{
+			"step": "activateTheme",
+			"themeFolderName": "shipnote"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-content/themes/shipnote/tools/demo/content.php';"
+		}
+	]
+}

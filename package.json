@@ -1,0 +1,25 @@
+{
+	"name": "shipnote",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Development tooling for the Shipnote WordPress block theme.",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"test": "node --test tests/*.test.mjs",
+		"contrast": "python3 tools/contrast.py theme.json styles/*.json",
+		"playground": "wp-playground-cli server --blueprint=tools/blueprint.json --mount=.:/wordpress/wp-content/themes/shipnote --port=9400",
+		"demo": "wp-playground-cli server --blueprint=tools/demo.blueprint.json --mount=.:/wordpress/wp-content/themes/shipnote --mount=./tools/mu-plugins:/wordpress/wp-content/mu-plugins --port=9401",
+		"zip": "node tools/build-zip.mjs",
+		"theme-check": "node tools/build-zip.mjs && node tools/theme-check.mjs",
+		"shots": "node tools/shoot.mjs",
+		"screenshot": "node tools/screenshot.mjs",
+		"lint:php": "wp-playground-cli php --php=7.4 --mount=.:/theme -- /theme/tools/php-lint.php",
+		"validate:blocks": "node tools/validate-blocks.mjs",
+		"cbt": "node tools/build-zip.mjs && wp-playground-cli server --blueprint=tools/cbt.blueprint.json --mount=./dist/shipnote:/wordpress/wp-content/themes/shipnote --port=9402",
+		"pot": "wp-playground-cli run-blueprint --blueprint=tools/pot.blueprint.json --mount=.:/wordpress/wp-content/themes/shipnote --mount=/etc/ssl/certs:/etc/ssl/certs"
+	},
+	"devDependencies": {
+		"@wp-playground/cli": "3.1.62",
+		"playwright-core": "^1.65.0"
+	}
+}

@@ -1,0 +1,65 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+	"version": 3,
+	"title": "Night shift",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#131418",
+					"name": "Paper"
+				},
+				{
+					"slug": "base-2",
+					"color": "#1D1F25",
+					"name": "Paper shade"
+				},
+				{
+					"slug": "contrast",
+					"color": "#EEE9DE",
+					"name": "Ink"
+				},
+				{
+					"slug": "contrast-2",
+					"color": "#ABA79E",
+					"name": "Ink soft"
+				},
+				{
+					"slug": "accent",
+					"color": "#FF6B35",
+					"name": "Signal"
+				},
+				{
+					"slug": "on-accent",
+					"color": "#131418",
+					"name": "Ink on signal"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#9DB0FF",
+					"name": "Carbon"
+				},
+				{
+					"slug": "rule",
+					"color": "#3A3C44",
+					"name": "Rule"
+				}
+			]
+		},
+		"shadow": {
+			"presets": [
+				{
+					"slug": "lift",
+					"shadow": "0 1px 2px rgb(0 0 0 / 0.4), 0 16px 40px -12px rgb(0 0 0 / 0.7)",
+					"name": "Lift"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontWeight": "380"
+		}
+	}
+}
